@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Test</title>
+</head>
+<body>
+    <h1>Simple Test Page</h1>
+    <p>This is a simplified test page to check if the server is working correctly.</p>
+    <button id="testButton">Test API Connection</button>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('testButton').addEventListener('click', function() {
+            const resultElement = document.getElementById('result');
+            resultElement.innerText = 'Testing connection to API...';
+            
+            fetch('http://localhost:8082/api/company/info')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    resultElement.innerText = 'Connection successful! Company: ' + data.name;
+                })
+                .catch(error => {
+                    resultElement.innerText = 'Error: ' + error.message;
+                });
+        });
+    </script>
+</body>
+</html>
