@@ -12,10 +12,10 @@
     </parent>
     
     <groupId>com.company</groupId>
-    <artifactId>website</artifactId>
+    <artifactId>webapp</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Website Application</name>
-    <description>Backend for Website Application</description>
+    <description>Backend for WebApp Application</description>
       <properties>
         <java.version>17</java.version>
         <jjwt.version>0.11.5</jjwt.version>

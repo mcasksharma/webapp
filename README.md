@@ -1,6 +1,6 @@
-# Company Website - Full Stack Application
+# Company WebApp - Full Stack Application
 
-This is a full-stack web application for a software company's website, built with Java 17/Spring Boot for the backend and React with TypeScript for the frontend.
+This is a full-stack web application for a software company's webapp, built with Java 17/Spring Boot for the backend and React with TypeScript for the frontend.
 
 ## Project Structure
 
@@ -8,7 +8,7 @@ This is a full-stack web application for a software company's website, built wit
 ├── backend/ - Spring Boot application with Maven
 │   └── src/
 │       ├── main/
-│       │   ├── java/com/company/website/
+│       │   ├── java/com/company/webapp/
 │       │   │   ├── config/
 │       │   │   ├── controller/
 │       │   │   ├── model/

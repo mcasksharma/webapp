@@ -1,6 +1,6 @@
 @echo off
 echo ===============================================
-echo    Company Website - Application Starter
+echo    Company WebApp - Application Starter
 echo ===============================================
 
 echo Checking environment...
